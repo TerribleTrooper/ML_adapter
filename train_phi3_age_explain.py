@@ -7,7 +7,7 @@ BASE_MODEL = "microsoft/phi-3-mini-4k-instruct"
 
 # путь к папке с LoRA (там где adapter_model.safetensors)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-LORA_ADAPTER = os.path.join(SCRIPT_DIR, "output_phi3_lora")
+LORA_ADAPTER = None   # ← вот так, без пути
 
 SYSTEM_PROMPT = (
     "Твоя задача — анализировать текст и присваивать ему возрастной рейтинг.\n"
